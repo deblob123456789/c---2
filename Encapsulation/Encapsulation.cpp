@@ -4,25 +4,33 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <sstream>
+#include "encapsulation.h"
 
-using namespace std;
+//using namespace std;
 
-void stringArrayfunc() {
-    vector<string> stringArray;
-    string userInput;
-    while (true) {
+std::string cVector3::toString() {
+    std::stringstream sstreamBuffer;
 
-        cin >> userInput;
-        stringArray.push_back(userInput);
+    std::cout << "Enter value" << std::endl;
 
-        for (int i = 0; i < stringArray.size(); i++) {
-            cout << stringArray[i] << endl;
-        }
-    }
-}
+    std::cin >> x;
+    std::cin >> y;
+    std::cin >> z;
+
+    sstreamBuffer << "Point:" << x << "," << y << "," << z;
+
+    std::string result = sstreamBuffer.str();
+
+    return result;
+ };
 
 int main() {
-    stringArrayfunc();
+    //stringArrayfunc();
+
+    cVector3 V3;
+    std::cout << V3.toString() << std::endl;
+
     return 0;
 }
 
