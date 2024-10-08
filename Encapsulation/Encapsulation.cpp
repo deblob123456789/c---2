@@ -9,6 +9,17 @@
 
 //using namespace std;
 
+//Default values after object creation
+cVector3::cVector3(float _x, float _y, float _z):
+    x(_x), y(_y), z(_z){};
+
+
+//Experimental function (incomplete, can delete)
+/*float cVector3::EnterValue() {
+    std::cout << "Enter value" << std::endl;
+};*/
+
+
 std::string cVector3::toString() {
     std::stringstream sstreamBuffer;
 
@@ -18,21 +29,19 @@ std::string cVector3::toString() {
     std::cin >> y;
     std::cin >> z;
 
-    sstreamBuffer << "Point:" << x << "," << y << "," << z;
+    sstreamBuffer << "Point : x:" << x << ", y:" << y << ", z:" << z;
 
-    std::string result = sstreamBuffer.str();
-
-    return result;
+    return sstreamBuffer.str();
  };
 
-int main() {
-    //stringArrayfunc();
-
-    cVector3 V3;
-    std::cout << V3.toString() << std::endl;
-
-    return 0;
-}
+//int main() {
+//    //stringArrayfunc();
+//
+//    cVector3 V3(0.f, 0.f, 0.f);
+//    std::cout << V3.toString() << std::endl;
+//
+//    return 0;
+//}
 
 /*
     std::string userInput;

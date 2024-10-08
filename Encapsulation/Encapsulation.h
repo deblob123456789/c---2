@@ -28,6 +28,10 @@ public:
     float y;
     float z;
 
+    //Default constructor
+    cVector3(float x, float y, float z);
+
+    //Tell the class these functions exist somewhere
     std::string toString();
     //float EnterValue();
 };
