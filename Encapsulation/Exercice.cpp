@@ -7,17 +7,17 @@
 #include "AMovable.h"
 #include "AMovable.cpp"
 
-Entity::Entity(float _x, float _y) : position(_x, _y)
-{
-
-}
+//Entity::Entity(Vector2 position) : position(x, y)
+//{
+//
+//}
 
 int main() {
 
-    Vector2 v(10, 30);
-    Entity e(0, 0);
+    //Vector2 v(10, 30);
+    StaticObject Object(6,5);
 
-    std::cout << "test" << std::endl;
+    //std::cout << Object.getX() << std::endl;
 
     return 0;
 }

@@ -37,5 +37,30 @@ public:
 };
 
 
+class Integer
+{
+protected:
+    int int1;
+public:
+    Integer(); // so that default = 0
+    Integer(int int1);
+
+    Integer operator+(const Integer& _integer2); //operator + is defined somewhere
+    Integer operator+=(const Integer& _integer2);
+    Integer operator-(const Integer& _integer2);
+    Integer operator-=(const Integer& _integer2);
+    Integer operator*(const Integer& _integer2);
+    Integer operator*=(const Integer& _integer2);
+    Integer operator/(const Integer& _integer2);
+    Integer operator/=(const Integer& _integer2);
+    Integer operator%(const Integer& _integer2);
+    Integer operator%=(const Integer& _integer2);
+    Integer operator<<(const Integer& _integer2);
+
+    std::string toString();
+
+    Integer pow(const Integer& int_exposant);
+};
+
 #endif
 

@@ -33,12 +33,29 @@ protected:
 
 public:
     //constructor
-    Entity(float _x, float _y);
+    //Entity(float _x, float _y);
+    Entity(Vector2 _position) : position (_position)
+    {
 
-	/*virtual void setX(float _x);
-    virtual float getX();
-    virtual void setY(float _y);
-    virtual float getY();*/
+    }
+
+	virtual void setX(float _x)
+    {
+        position.setX(_x);
+    }
+    virtual float getX()
+    {
+	    return position.getX();
+    }
+    virtual void setY(float _y)
+    {
+        position.setY(_y);
+    }
+    virtual float getY()
+    {
+        return position.getY();
+    }
+
 };
 
 

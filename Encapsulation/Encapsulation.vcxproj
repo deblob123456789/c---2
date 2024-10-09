@@ -128,12 +128,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AMovable.cpp" />
+    <ClCompile Include="BreakableObject.cpp" />
     <ClCompile Include="Encapsulation.cpp" />
     <ClCompile Include="Exercice.cpp" />
     <ClCompile Include="explanations.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AMovable.h" />
+    <ClInclude Include="BreakableObject.h" />
     <ClInclude Include="Encapsulation.h" />
     <ClInclude Include="Exercice.h" />
     <ClInclude Include="Interface.h" />
