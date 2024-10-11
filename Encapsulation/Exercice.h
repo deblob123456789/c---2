@@ -1,31 +1,7 @@
 #ifndef EXERCICE_H__
 #define EXERCICE_H__
 
-class Vector2 {
-protected:
-    float x;
-	float y;
-
-public:
-    //constructor
-    Vector2(float _x, float _y) : x(_x), y(_y)
-    {
-	    
-    }
-
-    void setX(float _x) {
-        x = _x;
-    }
-    float getX() {
-        return x;
-    }
-    void setY(float _y) {
-        y = _y;
-    }
-    float getY() {
-        return y;
-    }
-};
+#include "Vector2.h"
 
 class Entity {
 protected:
@@ -57,11 +33,6 @@ public:
     }
 
 };
-
-
-
-
-
 
 
 

@@ -1,23 +1,14 @@
-#include <iostream>
-#include <vector>
-#include <string>
-#include <sstream>
-
 #include "Exercice.h"
-#include "AMovable.h"
-#include "AMovable.cpp"
-
-//Entity::Entity(Vector2 position) : position(x, y)
-//{
-//
-//}
+#include "BreakableObject.h"
+#include "Mob.h"
 
 int main() {
 
-    //Vector2 v(10, 30);
-    StaticObject Object(6,5);
+    BreakableObject Object(6,5,5,3);
+    Object.takeDamage(2);
 
-    //std::cout << Object.getX() << std::endl;
+    //Mob Slime(6, 5, 5, 3, 1, 2, 3);
+    //std::cout << Object.getcurrentHP() << std::endl;
 
     return 0;
 }

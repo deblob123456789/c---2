@@ -132,13 +132,16 @@
     <ClCompile Include="Encapsulation.cpp" />
     <ClCompile Include="Exercice.cpp" />
     <ClCompile Include="explanations.cpp" />
+    <ClCompile Include="Mob.cpp" />
+    <ClCompile Include="Vector2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AMovable.h" />
     <ClInclude Include="BreakableObject.h" />
     <ClInclude Include="Encapsulation.h" />
     <ClInclude Include="Exercice.h" />
-    <ClInclude Include="Interface.h" />
+    <ClInclude Include="Mob.h" />
+    <ClInclude Include="Vector2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -2,6 +2,7 @@
 #define AMOVABLE_H__
 
 #include "Exercice.h"
+#include <iostream>
 
 //Classe abstraite, can't instanciate AMovable on its own as it is missing Move's implementation
 class AMovable {
@@ -11,9 +12,9 @@ protected:
 
 public:
     //constructor
-    AMovable(float _x, float _y, float _speed);
+    AMovable(float _directionx, float _directiony, float speed);
 
-    virtual void setDirection(Vector2 newDirection);
+    virtual Vector2 setDirection(float _directionx, float _directiony);
     virtual void setSpeed(float newSpeed);
     virtual void Move(Vector2 direction, float speed) = 0; //virtual pur
 };
@@ -26,10 +27,12 @@ protected:
 
 public:
     //constructor
-    Alive(float _maxHP, float _currentHP);
+    Alive(float maxHP, float currentHP);
 
-    virtual void getMaxHP();
-    virtual void getcurrentHP();
+    virtual void setMaxHP(float maxHP);
+    virtual float getMaxHP();
+    virtual void setcurrentHP(float currentHP);
+    virtual float getcurrentHP();
     virtual void takeDamage(float damageAmount);
 };
 
@@ -41,8 +44,6 @@ public:
 
 
 class StaticObject : public Entity {
-protected:
-
 public:
     //constructor
     StaticObject(float _x, float _y): Entity( Vector2(_x,_y)) {
